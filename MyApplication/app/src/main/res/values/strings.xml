@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="button">Button</string>
+    <string name="button2">Button</string>
+    <string name="c_l_i_c_k">C L I C K</string>
+    <string name="classment">Classment</string>
+    <string name="settings">Settings</string>
+    <string name="logo">LOGO</string>
 </resources>

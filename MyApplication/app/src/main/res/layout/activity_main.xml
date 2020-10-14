@@ -4,29 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFB800"
     tools:context=".MainActivity">
+
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="213dp"
+        android:layout_height="64dp"
         android:layout_marginStart="162dp"
-        android:layout_marginTop="521dp"
+        android:layout_marginTop="376dp"
         android:layout_marginEnd="161dp"
-        android:text="Button"
+        android:background="#282FC9"
+        android:text="@string/c_l_i_c_k"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="165dp"
+        android:layout_height="54dp"
         android:layout_marginStart="162dp"
-        android:layout_marginTop="51dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="165dp"
-        android:text="Button"
+        android:background="#282FC9"
+        android:fontFamily="@font/righteous"
+        android:text="@string/classment"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="165dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="165dp"
+        android:background="#282FC9"
+        android:fontFamily="@font/righteous"
+        android:text="@string/settings"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/go_to_click"
+        android:contentDescription="@string/logo" />
 </android.support.constraint.ConstraintLayout>
