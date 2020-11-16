@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
     android:background="#FFB800"
     tools:context=".MainActivity">
 
@@ -16,7 +17,7 @@
         android:layout_marginTop="376dp"
         android:layout_marginEnd="161dp"
         android:background="#282FC9"
-        android:text="@string/c_l_i_c_k"
+        android:text="C L I C K"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,10 +63,10 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/logo"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/go_to_click"
-        android:contentDescription="@string/logo" />
+        app:srcCompat="@drawable/go_to_click" />
 </android.support.constraint.ConstraintLayout>
