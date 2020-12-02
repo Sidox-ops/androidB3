@@ -3,7 +3,7 @@ package com.example.myapplication;
 import android.content.Context;
 import android.content.Intent;
 import android.os.CountDownTimer;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,7 +31,7 @@ public class MainActivity3 extends AppCompatActivity {
 
         if (ready>0)
         {
-            sleep
+            //sleep
         }
         /*timer2 = new CountDownTimer(10 * 1000, 1000)
         {

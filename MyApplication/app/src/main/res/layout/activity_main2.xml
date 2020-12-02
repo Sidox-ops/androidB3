@@ -7,9 +7,9 @@
     android:background="@drawable/fond"
     tools:context=".MainActivity2">
 
-<<<<<<< HEAD
-</androidx.constraintlayout.widget.ConstraintLayout>
-=======
+
+
+
     <Button
         android:id="@+id/button4"
         android:layout_width="201dp"
@@ -123,5 +123,5 @@
         app:srcCompat="@drawable/the_rock_cut" />
 
 
-</android.support.constraint.ConstraintLayout>
->>>>>>> 141c10b... new resources
+</androidx.constraintlayout.widget.ConstraintLayout>
+
