@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:background="@drawable/fond"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/go_to_click" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="185dp"
+        android:layout_height="45dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/righteous"
+        android:inputType="textPersonName"
+        android:text="Login"
+        android:textSize="23sp"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="405dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="185dp"
+        android:layout_height="42dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/righteous"
+        android:inputType="textPersonName"
+        android:text="Password"
+        android:textSize="23sp"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="484dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="139dp"
+        android:layout_height="46dp"
+        android:background="#282FC9"
+        android:fontFamily="@font/righteous"
+        android:text="se connecter"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="574dp" />
+
+</android.support.constraint.ConstraintLayout>

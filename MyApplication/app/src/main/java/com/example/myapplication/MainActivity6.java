@@ -6,33 +6,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity6 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main6);
 
         final Button button2 = findViewById(R.id.button2);
-        final Button button3 = findViewById(R.id.button3);
 
         button2.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
-             //Changer de page
+                //Changer de page
                 Intent i = new Intent(getBaseContext(), MainActivity2.class);
                 startActivity(i);
             }
         });
-        button3.setOnClickListener(new View.OnClickListener(){
 
-            @Override
-            public void onClick(View v) {
-                //Changer de page
-                Intent i = new Intent(getBaseContext(), MainActivity4.class);
-                startActivity(i);
-            }
-        });
     }
 }
