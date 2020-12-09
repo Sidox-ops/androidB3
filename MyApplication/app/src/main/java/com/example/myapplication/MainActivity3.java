@@ -12,15 +12,18 @@ import android.widget.Toast;
 
 public class MainActivity3 extends AppCompatActivity {
 
-    public static int lancement=0;
+    public static int go=0;
     public static int ready=0;
+    public static int timer=0;
     public static int countonclick=0;
     public String Nbrclick;
-    /*public CountDownTimer timer2;*/
+    public CountDownTimer timer2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         countonclick = 0;
+        timer=0;
+        go=10;
         ready = 3;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
@@ -28,12 +31,7 @@ public class MainActivity3 extends AppCompatActivity {
         final TextView textView5 = findViewById(R.id.textView5);
         final TextView textViewchrono = findViewById(R.id.textViewchrono);
         button7.setVisibility(View.GONE);
-
-        if (ready>0)
-        {
-            //sleep
-        }
-        /*timer2 = new CountDownTimer(10 * 1000, 1000)
+        timer2 = new CountDownTimer(10 * 1000, 1000)
         {
             public void onTick(long millisUntilFinished)
             {
@@ -41,42 +39,29 @@ public class MainActivity3 extends AppCompatActivity {
                 textView5.setText(String.valueOf(seconds));
             }
             public void onFinish() {
-                Intent i = new Intent(getBaseContext(), MainActivity5.class);
+                Intent i = new Intent(getBaseContext(), MainActivity4.class);
                 startActivity(i);
             }
-        }.start();*/
+        };
 
-        //lancement=2
         {
-            //textView5.setVisibility(View.GONE);
-            textViewchrono.setText("GO:");
+            textViewchrono.setText("GOOO");
             button7.setVisibility(View.VISIBLE);
             button7.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    if (timer==0)
+                    {
+                        timer2.start();
+                        timer=1;
+                    }
                     countonclick++;
                     //Nbrclick = Integer.toString(countonclick);
                     Nbrclick = String.valueOf(countonclick);
                     Context context = getApplicationContext();
                     button7.setText(Nbrclick);
-                    //Changer de page
-                    //Intent i = new Intent(getBaseContext(), MainActivity2.class);
-                    //startActivity(i);
                 }
             });
         }
     }
-
-    /*public void showClick (View view){
-        Context context = getApplicationContext();
-        CharSequence text = "Tu as cliqué Sidox !";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }*/
-    //public static void main (String [] args)
-    //{
-    //System.out.println(countonclick);
-    //}
 }
