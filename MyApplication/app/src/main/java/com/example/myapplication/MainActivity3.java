@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,27 +30,29 @@ public class MainActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
         final Button button7 = findViewById(R.id.button7);
         final TextView textView5 = findViewById(R.id.textView5);
+        final ImageView imageView4 = findViewById(R.id.imageView4);
         final TextView textViewchrono = findViewById(R.id.textViewchrono);
-        button7.setVisibility(View.GONE);
+        textView5.setVisibility(View.GONE);
         timer2 = new CountDownTimer(10 * 1000, 1000)
         {
             public void onTick(long millisUntilFinished)
             {
-                int seconds = (int) (millisUntilFinished / 1000);
+                int seconds = ((int) (millisUntilFinished / 1000)+1);
                 textView5.setText(String.valueOf(seconds));
             }
             public void onFinish() {
-                Intent i = new Intent(getBaseContext(), MainActivity4.class);
+                Intent i = new Intent(getBaseContext(), MainActivity5.class);
                 startActivity(i);
             }
         };
 
         {
-            textViewchrono.setText("GOOO");
-            button7.setVisibility(View.VISIBLE);
             button7.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    imageView4.setVisibility(View.GONE);
+                    textView5.setVisibility(View.VISIBLE);
+                    textViewchrono.setText("Quick");
                     if (timer==0)
                     {
                         timer2.start();

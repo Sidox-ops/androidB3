@@ -16,4 +16,7 @@
     <string name="_3">3</string>
     <string name="d_compte">Décompte</string>
     <string name="ready">READY</string>
+    <string name="_countdown">3</string>
+    <string name="on_click">On click</string>
+    <string name="up_arrow">To the Top Arrow</string>
 </resources>
