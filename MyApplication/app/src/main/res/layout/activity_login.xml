@@ -12,22 +12,24 @@
         android:id="@+id/textView6"
         android:layout_width="236dp"
         android:layout_height="67dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="47dp"
         android:background="#282FC9"
         android:text="    LOGIN"
         android:textColor="#FFFFFF"
         android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/Email"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.64" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/login"
         android:layout_width="210dp"
         android:layout_height="49dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="52dp"
         android:text="Login"
         app:layout_constraintBottom_toTopOf="@+id/button10"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +40,7 @@
         android:id="@+id/button10"
         android:layout_width="210dp"
         android:layout_height="49dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="52dp"
         android:text="New Here ?"
         app:layout_constraintBottom_toTopOf="@+id/progressBar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,7 +51,7 @@
         android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="52dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Password"
@@ -62,27 +64,26 @@
         android:id="@+id/Email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="52dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="E-mail"
         app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.912" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
         android:clickable="false"
         android:progressTint="#282FC9"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="594dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="181dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
