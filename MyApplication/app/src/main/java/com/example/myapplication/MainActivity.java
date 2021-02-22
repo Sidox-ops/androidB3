@@ -7,11 +7,16 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-
+    public String Nbrclick="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Intent intent = getIntent();
+        if (intent != null)
+            if (intent.hasExtra("Nbrclick"))
+                Nbrclick = intent.getStringExtra("Nbrclick");
 
         final Button button2 = findViewById(R.id.button2);
         final Button button3 = findViewById(R.id.button3);
@@ -22,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
              //Changer de page
                 Intent i = new Intent(getBaseContext(), MainActivity2.class);
+                i.putExtra("Nbrclick",Nbrclick);
                 startActivity(i);
             }
         });
@@ -31,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //Changer de page
                 Intent i = new Intent(getBaseContext(), MainActivity4.class);
+                i.putExtra("Nbrclick",Nbrclick);
                 startActivity(i);
             }
         });

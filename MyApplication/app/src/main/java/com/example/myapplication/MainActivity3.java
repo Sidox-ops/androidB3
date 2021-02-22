@@ -17,7 +17,7 @@ public class MainActivity3 extends AppCompatActivity {
     public static int ready=0;
     public static int timer=0;
     public static int countonclick=0;
-    public String Nbrclick;
+    public String Nbrclick="";
     public CountDownTimer timer2;
 
     @Override
@@ -42,6 +42,7 @@ public class MainActivity3 extends AppCompatActivity {
             }
             public void onFinish() {
                 Intent i = new Intent(getBaseContext(), MainActivity5.class);
+                i.putExtra("Nbrclick",Nbrclick);
                 startActivity(i);
             }
         };

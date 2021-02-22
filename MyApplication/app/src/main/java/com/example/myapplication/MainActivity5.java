@@ -10,19 +10,23 @@ import android.widget.TextView;
 import static com.example.myapplication.MainActivity3.countonclick;
 
 public class MainActivity5 extends AppCompatActivity {
-
+    public String Nbrclick="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main5);
 
+        Intent intent = getIntent();
+        if (intent != null)
+            if (intent.hasExtra("Nbrclick"))
+                Nbrclick = intent.getStringExtra("Nbrclick");
+
         final TextView textView17 = findViewById(R.id.textView17);
         final Button button8 = findViewById(R.id.button8);
         final Button button11 = findViewById(R.id.button11);
-        final TextView textView3 = findViewById(R.id.textView3);
-        textView17.setText(String.valueOf(countonclick));
-        textView3.setText(String.valueOf(countonclick));
+
+            textView17.setText(Nbrclick);
         button8.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -37,8 +41,9 @@ public class MainActivity5 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Changer de page
-                Intent j = new Intent(getBaseContext(), MainActivity.class);
-                startActivity(j);
+                Intent e = new Intent(getBaseContext(), MainActivity.class);
+                e.putExtra("Nbrclick",Nbrclick);
+                startActivity(e);
             }
         });
 
