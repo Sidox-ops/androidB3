@@ -20,6 +20,8 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         final Button button4 = findViewById(R.id.button4);
+        final Button button6 = findViewById(R.id.button6);
+
 
 
         button4.setOnClickListener(new View.OnClickListener(){
@@ -28,6 +30,16 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View v) {
                 //Changer de page
                 Intent j = new Intent(getBaseContext(), MainActivity3.class);
+                startActivity(j);
+            }
+        });
+
+        button6.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                //Changer de page
+                Intent j = new Intent(getBaseContext(), Register.class);
                 startActivity(j);
             }
         });
